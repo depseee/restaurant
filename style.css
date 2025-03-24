@@ -1,0 +1,84 @@
+body {
+    margin: 0; /* убрать белые полосы по краям */
+    font-family: Open Sans;
+}
+
+.container {
+    margin: 0px 166px; 
+}
+
+.header {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat; /* отключает повторение картинок (background-image) */
+    background-size: cover; /* растягивает на весь экран */
+    height: 100vh; /* картинка на весь экран */
+
+}
+
+.header-line {
+    padding-top: 55px;
+    display: flex; /* расположение элементов в строку */
+    align-items: center; /* выравнивание по линии главного элемента */
+    justify-content: space-around; /* Одинаковое расстояние между элементами */
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none; /* убирает подчеркивание ссылок */
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 25px; /* Расстояние в 25px */
+}
+
+.nav-item:hover {
+    transition: 0.6s linear;
+    color: #FF7400;
+}
+
+.cart {
+    position: relative; /* Родительский класс */
+    border-right: 1px solid #FFFFFF; /* Вертикальная полоса */
+    padding-right: 10px;
+    height: 50px;
+}
+
+.cart-img {
+    position: absolute; /* Абсолютное местоположение вне зависимости других элементов */
+    top: 20px;
+    right: 7px;
+}
+
+.num {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.num:hover {
+    transition: 0.6s linear;
+    color: #FF7400;
+}
+
+.phone-text {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.phone-holder {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background-color: #FF7400;
+    color: white;
+    text-decoration: none;
+    padding: 14px 18px; /* Внутренний отступ сверху и слева */
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: #a15517;
+    transition: 0.6s linear;
+}
